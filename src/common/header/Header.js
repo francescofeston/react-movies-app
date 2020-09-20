@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Input from '@material-ui/core/Input';
+import PropTypes from 'prop-types';
 
 const customStyles = {
     content: {
@@ -29,7 +30,9 @@ const TabContainer = function(props){
         </Typography>
     );
 }
-
+TabContainer.propTypes = {
+    children: PropTypes.node.isRequired
+}
 
 class Header extends Component{
     constructor(){
